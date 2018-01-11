@@ -19,12 +19,12 @@ attr_accessor :grade, :name
 
   def add_student(name, grade_lvl)
 
-     if !(@@roster.has_key?(grade_lvl))
-      @@roster[grade_lvl]=[]
-      @@roster[grade_lvl]<<name
+     if !(roster.has_key?(grade_lvl))
+      roster[grade_lvl]=[]
+      roster[grade_lvl]<<name
     elsif
-      @@roster.has_key?(grade_lvl)
-      @@roster[grade_lvl]<<name
+      roster.has_key?(grade_lvl)
+      roster[grade_lvl]<<name
     end
 
     @name = name
